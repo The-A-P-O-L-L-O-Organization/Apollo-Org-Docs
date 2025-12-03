@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Another innovative Discord bot project from our organization. Documentation and details coming soon.
+        A simple Discord bot with greeting features, admin controls, and Rock-Paper-Scissors game. Easy to set up and run.
       </>
     ),
   },
