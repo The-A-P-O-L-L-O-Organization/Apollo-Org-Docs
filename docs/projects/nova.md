@@ -60,7 +60,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 
 This project is licensed under the GNU Affero General Public License.  
-See the [LICENSE file](./LICENSE) for details.
+See the [LICENSE file](https://github.com/The-A-P-O-L-L-O-Organization/Nova-Discord-Bot/blob/main/LICENSE) for details.
 
 ## Links
 
