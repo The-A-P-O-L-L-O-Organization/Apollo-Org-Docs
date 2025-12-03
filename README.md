@@ -1,41 +1,53 @@
-# Website
+# Apollo Org Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentation for The A.P.O.L.L.O. Organization projects.
 
-## Installation
+## About
 
-```bash
-yarn
-```
+This repository contains the documentation site for our open-source projects, built with [Docusaurus](https://docusaurus.io/).
 
-## Local Development
+## Projects
 
-```bash
-yarn start
-```
+- **[Nova Discord Bot](./docs/projects/nova)**: A bot for daily Na'vi words and announcements.
+- **[John Discord Bot](./docs/projects/john)**: A simple bot with greetings and games.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Development
 
-## Build
+### Prerequisites
 
-```bash
-yarn build
-```
+- Node.js 20+
+- pnpm
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+### Installation
 
 ```bash
-USE_SSH=true yarn deploy
+pnpm install
 ```
 
-Not using SSH:
+### Local Development
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+pnpm start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This starts a local development server at `http://localhost:3000`.
+
+### Build
+
+```bash
+pnpm build
+```
+
+Generates static files in the `build` directory.
+
+### Deployment
+
+Deployed automatically via GitHub Actions to GitHub Pages at `https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/`.
+
+## Contributing
+
+Contributions welcome! Please follow our guidelines and submit PRs.
+
+## License
+
+This documentation is part of The A.P.O.L.L.O. Organization projects.
