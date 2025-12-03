@@ -5,7 +5,7 @@ John is a simple Discord bot built with Python using the discord.py library, dev
 ## Features
 
 - Greets new members when they join the server.
-- Responds with "Hi!, {pinger}" when pinged (mentioned) in a message.
+- Responds with "Hi!, `{pinger}`" when pinged (mentioned) in a message.
 - **/reboot**: Restarts the bot (Administrator only).
 - **/shutdown**: Gracefully shuts down the bot (Administrator only).
 - **/games**: Play Rock-Paper-Scissors with the bot.
