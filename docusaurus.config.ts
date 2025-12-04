@@ -113,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/your-org-invite', // Placeholder, update with actual
+              href: 'https://discord.gg/QgJcV7kP3a', // Placeholder, update with actual
             },
             {
               label: 'GitHub',

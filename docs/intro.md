@@ -26,7 +26,7 @@ Explore our current projects:
 
 To contribute or learn more:
 
-- Join our [Discord](https://discord.gg/your-org-invite) for discussions and help.
+- Join our [Discord](https://discord.gg/QgJcV7kP3a) for discussions and help.
 - Check out our [GitHub Organization](https://github.com/The-A-P-O-L-L-O-Organization) for repositories.
 - Follow our development standards and workflows.
 
