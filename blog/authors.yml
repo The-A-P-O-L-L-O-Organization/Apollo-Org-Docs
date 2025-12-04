@@ -23,3 +23,25 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+apollo-org:
+  name: The A.P.O.L.L.O. Organization
+  title: Open Source Community
+  url: https://github.com/The-A-P-O-L-L-O-Organization
+  image_url: https://github.com/The-A-P-O-L-L-O-Organization.png
+
+CodeMaster013:
+  name: CodeMaster013
+  title: Founder & Developer
+  url: https://github.com/CodeMaster013
+  image_url: https://github.com/CodeMaster013.png
+  socials:
+    github: CodeMaster013
+
+HELLoDAW:
+  name: Deonte Williams (HELLoDAW)
+  title: Founder & Developer
+  url: https://github.com/HELLoDAW
+  image_url: https://github.com/HELLoDAW.png
+  socials:
+    github: HELLoDAW
