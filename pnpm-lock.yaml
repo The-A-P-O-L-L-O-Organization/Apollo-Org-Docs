@@ -27,7 +27,7 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3
       react-dom:
-        specifier: ^19.0.0
+        specifier: ^19.2.3
         version: 19.2.1(react@19.2.3)
     devDependencies:
       '@docusaurus/module-type-aliases':
