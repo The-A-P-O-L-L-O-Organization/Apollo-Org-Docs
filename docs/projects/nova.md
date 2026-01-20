@@ -1,4 +1,8 @@
-# Nova Discord Bot
+# Nova Discord Bot (Deprecated)
+
+:::warning Deprecated Project
+This project is no longer actively maintained and has been deprecated. Please use [A.P.O.L.L.O Discord Bot](./apollo) for a more feature-rich and actively maintained Discord bot solution.
+:::
 
 Nova is a Discord bot designed to provide engaging daily content and custom announcements for your server, powered by Python and the discord.py library.
 

@@ -11,21 +11,21 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Nova Discord Bot',
+    title: 'A.P.O.L.L.O Discord Bot',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        A Discord bot that provides daily Na'vi words and custom announcements for your server.
-        Learn more about setup, features, and commands.
+        A feature-rich Discord bot with welcome system, utility commands, and comprehensive moderation tools.
+        Built with discord.js and Docker support.
       </>
     ),
   },
   {
-    title: 'John Discord Bot',
+    title: 'Nova Discord Bot (Deprecated)',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        A simple Discord bot with greeting features, admin controls, and Rock-Paper-Scissors game. Easy to set up and run.
+        A Discord bot that provides daily Na'vi words and custom announcements. This project is now deprecated.
       </>
     ),
   },

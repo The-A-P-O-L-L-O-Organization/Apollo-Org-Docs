@@ -19,8 +19,8 @@ The A.P.O.L.L.O. Organization is a shared space for projects, ideas, and open-so
 
 Explore our current projects:
 
-- **[Nova Discord Bot](./projects/nova)**: A Discord bot for daily Na'vi words and announcements.
-- **[John Discord Bot](./projects/john)**: Another Discord bot project.
+- **[A.P.O.L.L.O Discord Bot](./projects/apollo)**: A feature-rich Discord bot with utility and moderation commands.
+- **[Nova Discord Bot](./projects/nova)**: A Discord bot for daily Na'vi words and announcements (Deprecated).
 
 ## Getting Started
 

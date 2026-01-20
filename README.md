@@ -8,8 +8,8 @@ This repository contains the documentation site for our open-source projects, bu
 
 ## Projects
 
-- **[Nova Discord Bot](./docs/projects/nova)**: A bot for daily Na'vi words and announcements.
-- **[John Discord Bot](./docs/projects/john)**: A simple bot with greetings and games.
+- **[Nova Discord Bot](./docs/projects/nova)**: A bot for daily Na'vi words and announcements (Deprecated).
+- **[A.P.O.L.L.O Discord Bot](./docs/projects/apollo)**: A feature-rich Discord bot with utility and moderation commands.
 
 ## Development
 
