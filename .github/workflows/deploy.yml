@@ -25,10 +25,11 @@ jobs:
       run: pnpm install
     - name: Build
       run: pnpm build
+    - name: Remove symlinks
+      run: find ./build -type l -delete && find ./build -type f -exec chmod 644 {} \;
     - name: Upload artifact
-      uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+      uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
       with:
-        name: github-pages
         path: ./build
 
   deploy:
