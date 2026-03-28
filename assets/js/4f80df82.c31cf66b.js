@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkapollo_org_docs=globalThis.webpackChunkapollo_org_docs||[]).push([[805],{6160(o){o.exports=JSON.parse('{"tags":[{"label":"welcome","permalink":"/Apollo-Org-Docs/blog/tags/welcome","count":1},{"label":"introduction","permalink":"/Apollo-Org-Docs/blog/tags/introduction","count":1}]}')}}]);

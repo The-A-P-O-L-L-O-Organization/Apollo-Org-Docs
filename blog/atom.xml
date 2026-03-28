@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog</id>
+    <title>Apollo Org Docs Blog</title>
+    <updated>2025-12-04T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog"/>
+    <subtitle>Apollo Org Docs Blog</subtitle>
+    <icon>https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Apollo Org Docs]]></title>
+        <id>https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog/welcome</id>
+        <link href="https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog/welcome"/>
+        <updated>2025-12-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the official documentation site for The A.P.O.L.L.O. Organization!]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the official documentation site for The A.P.O.L.L.O. Organization!</p>
+<p>This site serves as a central hub for all our projects, documentation, and community resources. Here you'll find comprehensive guides, API references, and updates about our various initiatives.</p>
+<h2 class="anchor anchorTargetStickyNavbar_RDz4" id="what-is-apollo">What is A.P.O.L.L.O.?<a href="https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog/welcome#what-is-apollo" class="hash-link" aria-label="Direct link to What is A.P.O.L.L.O.?" title="Direct link to What is A.P.O.L.L.O.?" translate="no">​</a></h2>
+<p>A.P.O.L.L.O. stands for A Passionate Organization of Learners and Leaders in Open-source. We're a community-driven organization focused on fostering innovation through collaborative coding projects and continuous learning.</p>
+<h2 class="anchor anchorTargetStickyNavbar_RDz4" id="getting-started">Getting Started<a href="https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/blog/welcome#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<ul>
+<li class="">Explore our <a class="" href="https://the-a-p-o-l-l-o-organization.github.io/Apollo-Org-Docs/docs/intro">documentation</a> to learn about our projects</li>
+<li class="">Check out our <a href="https://github.com/The-A-P-O-L-L-O-Organization" target="_blank" rel="noopener noreferrer" class="">GitHub organization</a> for code repositories</li>
+<li class="">Join our <a href="https://discord.gg/QgJcV7kP3a" target="_blank" rel="noopener noreferrer" class="">Discord community</a> for discussions</li>
+</ul>
+<p>Stay tuned for more updates and exciting developments!</p>]]></content>
+        <author>
+            <name>Mitchell Sehenuk (CodeMaster013)</name>
+            <uri>https://github.com/CodeMaster013</uri>
+        </author>
+        <category label="welcome" term="welcome"/>
+        <category label="introduction" term="introduction"/>
+    </entry>
+</feed>

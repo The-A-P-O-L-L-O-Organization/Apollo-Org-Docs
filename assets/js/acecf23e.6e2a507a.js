@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkapollo_org_docs=globalThis.webpackChunkapollo_org_docs||[]).push([[903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/Apollo-Org-Docs/blog","blogTitle":"Blog","authorsListPath":"/Apollo-Org-Docs/blog/authors"}')}}]);

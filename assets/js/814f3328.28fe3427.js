@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkapollo_org_docs=globalThis.webpackChunkapollo_org_docs||[]).push([[472],{5513(o){o.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Apollo Org Docs","permalink":"/Apollo-Org-Docs/blog/welcome","unlisted":false,"date":"2025-12-04T00:00:00.000Z"}]}')}}]);
