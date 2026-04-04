@@ -35,8 +35,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -64,19 +62,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-
-      - name: Restore Docusaurus cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            .docusaurus
-            node_modules/.cache
-          key: docusaurus-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('docs/**', 'blog/**', 'src/**', 'docusaurus.config.ts') }}
-          restore-keys: |
-            docusaurus-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
-            docusaurus-${{ runner.os }}-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
