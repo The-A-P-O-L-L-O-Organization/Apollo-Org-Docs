@@ -1,8 +1,6 @@
 # Nova Subsystem
 
-:::success Integrated into Apollo
-Nova is now a core subsystem of [A.P.O.L.L.O Discord Bot](./apollo), integrated as a plugin. This page documents the Nova subsystem features available within Apollo.
-:::
+> **Integrated into Apollo:** Nova is now a core subsystem of [A.P.O.L.L.O Discord Bot](./apollo), integrated as a plugin. This page documents the Nova subsystem features available within Apollo.
 
 Nova is a subsystem of the A.P.O.L.L.O Discord Bot that provides daily Na'vi word content via the [Reykunyu API](https://reykunyu.lu). It was originally a standalone Python/discord.py bot and was ported to a JavaScript plugin inside Apollo v2.
 
