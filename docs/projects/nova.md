@@ -1,73 +1,34 @@
-# Nova Discord Bot (Deprecated)
+# Nova Subsystem
 
-:::warning Deprecated Project
-This project is no longer actively maintained and has been deprecated. Please use [A.P.O.L.L.O Discord Bot](./apollo) for a more feature-rich and actively maintained Discord bot solution.
+:::success Integrated into Apollo
+Nova is now a core subsystem of [A.P.O.L.L.O Discord Bot](./apollo), integrated as a plugin. This page documents the Nova subsystem features available within Apollo.
 :::
 
-Nova is a Discord bot designed to provide engaging daily content and custom announcements for your server, powered by Python and the discord.py library.
+Nova is a subsystem of the A.P.O.L.L.O Discord Bot that provides daily Na'vi word content via the [Reykunyu API](https://reykunyu.lu). It was originally a standalone Python/discord.py bot and was ported to a JavaScript plugin inside Apollo v2.
 
 ## Features
 
-- **Daily Na'vi Word**: Automatically fetches and posts a random Na'vi word (with English translation) every day at 12:00 PM ET in a designated channel, using the [Reykunyu API](https://reykunyu.lu).
-- **Embed Announcements**: Owner-only slash command to send rich embed messages to any channel with customizable title, description, color, and footer.
-- **Manual Trigger**: Owner-only slash command to manually post the daily Na'vi word outside of the scheduled time.
-- **Logging**: Activity and commands are logged to a file and optionally to a private log channel.
+- **Daily Na'vi Word**: Automatically fetches and posts a random Na'vi word (with English translation) every day at 12:00 PM ET in a configured channel
+- **Manual Trigger**: Owner-only `/navi` command to manually post the Na'vi word outside the scheduled time
+- **Distributed Lock**: Uses Apollo's `withLock` pattern for safe multi-instance scheduling across gateway and workers
+- **Graceful Fallback**: Daily scheduler waits 60s between checks, tracks last post date to avoid double-posting, and auto-disables if `NAVI_CHANNEL_ID` is not configured
 
 ## Commands
 
-### Slash Commands
+- **/navi** — Manually trigger a Na'vi word post (owner only)
+  - Fetches from `https://reykunyu.lu/api/random?holpxay=1&fnel=n`
+  - Posts a rich embed with Na'vi word and English translation to `NAVI_CHANNEL_ID`
 
-- `/nova_embed`
-  - **Description**: Nova announces world info as an embed.
-  - **Usage**: Owner only.
-  - **Parameters**:
-    - `channel`: Channel to send the message.
-    - `title`: Title of the embed.
-    - `description`: Main message (supports multi-line).
-    - `color`: Hex color code (e.g., #FF0000).
-    - `footer`: Optional footer text.
+## Configuration
 
-- `/trigger_navi`
-  - **Description**: Manually trigger the daily Na'vi word post.
-  - **Usage**: Owner only.
+Set `NAVI_CHANNEL_ID` in your environment variables to the Discord channel where daily Na'vi word embeds should be posted.
 
-## Setup & Installation
+## History
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/The-A-P-O-L-L-O-Organization/Nova-Discord-Bot.git
-   cd Nova-Discord-Bot
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Environment Variables**
-   Create a `.env` file in the root directory with the following variables:
-   ```
-   DISCORD_TOKEN=your_bot_token
-   OWNER_ID=your_discord_user_id
-   LOG_CHANNEL_ID=your_log_channel_id
-   ```
-
-4. **Run the Bot**
-   ```bash
-   python src/nova_bot.py
-   ```
-
-## Contribution
-
-Contributions are welcome! Please fork the repository and submit a pull request. Make sure to follow best practices and include clear commit messages.
-
-## License
-
-This project is licensed under the GNU Affero General Public License.  
-See the [LICENSE file](https://github.com/The-A-P-O-L-L-O-Organization/Nova-Discord-Bot/blob/main/LICENSE) for details.
+Nova began as a standalone Python bot using discord.py with two commands (`/nova_embed`, `/trigger_navi`) and a daily scheduler using `pytz` and `asyncio.sleep`. In Apollo v2, the embed functionality was dropped as redundant (Apollo's `/embed` command already covers it), and the Na'vi word features were ported to Node.js as the `nova` plugin.
 
 ## Links
 
-- [GitHub Repository](https://github.com/The-A-P-O-L-L-O-Organization/Nova-Discord-Bot)
-
-> Nova Discord Bot is maintained by [The-A-P-O-L-L-O-Organization](https://github.com/The-A-P-O-L-L-O-Organization).
+- [A.P.O.L.L.O Discord Bot](./apollo)
+- [Reykunyu API](https://reykunyu.lu)
+- [Original Nova Repository](https://github.com/The-A-P-O-L-L-O-Organization/Nova-Discord-Bot)

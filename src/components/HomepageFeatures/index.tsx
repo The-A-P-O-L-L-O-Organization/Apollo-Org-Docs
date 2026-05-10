@@ -21,11 +21,11 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Nova Discord Bot (Deprecated)',
+    title: 'Nova Subsystem (Integrated)',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        A Discord bot that provides daily Na'vi words and custom announcements. This project is now deprecated.
+        Daily Na'vi word posting subsystem — originally a standalone bot, now integrated as a plugin inside Apollo v2.
       </>
     ),
   },

@@ -17,3 +17,13 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+welcome:
+  label: Welcome
+  permalink: /welcome
+  description: Welcome posts
+
+introduction:
+  label: Introduction
+  permalink: /introduction
+  description: Introduction posts

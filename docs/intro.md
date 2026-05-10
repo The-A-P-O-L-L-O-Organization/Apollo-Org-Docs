@@ -19,8 +19,8 @@ The A.P.O.L.L.O. Organization is a shared space for projects, ideas, and open-so
 
 Explore our current projects:
 
-- **[A.P.O.L.L.O Discord Bot](./projects/apollo)**: A feature-rich Discord bot with utility and moderation commands.
-- **[Nova Discord Bot](./projects/nova)**: A Discord bot for daily Na'vi words and announcements (Deprecated).
+- **[A.P.O.L.L.O Discord Bot](./projects/apollo)**: A feature-rich Discord bot with plugin architecture, utility and moderation commands, multi-instance scaling, and integrated subsystems including Nova.
+- **[Nova Subsystem](./projects/nova)**: Na'vi word posting subsystem — originally a standalone bot, now integrated as a plugin inside Apollo v2.
 
 ## Getting Started
 
