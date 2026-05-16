@@ -388,6 +388,80 @@ node deploy-commands.js
    ```
 3. Restart the bot — the plugin's `_loadCommands()` picks it up automatically
 
+## Apollo CLI
+
+The Apollo bot includes a terminal-based CLI (`apollo`) for management without Discord. It ships inside the Docker image and is also accessible via `pnpm apollo` in development.
+
+```
+Usage: apollo <plugin> <command> [subcommand] [--flags]
+```
+
+### Access
+
+```bash
+# Inside the Docker container
+docker exec -it apollo-discord-bot apollo --help
+
+# Directly (when running outside Docker)
+pnpm apollo --help
+
+# Development
+node bin/apollo.js --help
+```
+
+### Guild Selection
+
+```bash
+# Set a default guild via environment variable
+export APOLLO_GUILD_ID=your-guild-id
+
+# Or pass --guild on each command
+apollo automod enable --guild your-guild-id
+```
+
+### Command Types
+
+**DB commands** read/write the database directly — work without the bot running:
+
+| Plugin | Commands |
+|--------|----------|
+| automod | `enable`, `disable`, `status`, `listwords`, `addword --word`, `removeword --word`, `set --setting --value`, `exemptchannel --channel --action`, `exemptrole --role --action` |
+| moderation | `case --id` |
+| utility | `tags list`, `tags show --name`, `tags create --name --content`, `tags delete --name` |
+| tickets | `list` |
+| integrations | `list` |
+| admin | `system info` |
+| nova | `word`, `today` |
+
+**Socket commands** route through a Unix socket to the running bot process — require the bot to be online:
+
+| Plugin | Commands |
+|--------|----------|
+| moderation | `ban --user [--reason]`, `kick --user [--reason]`, `mute --user [--duration] [--reason]`, `warn --user --reason`, `clear --count`, `slowmode --seconds`, `lockdown [--channel] [--action]` |
+| admin | `plugin enable --id`, `plugin disable --id`, `plugin reload --id`, `plugin install --id`, `plugin uninstall --id`, `logging --setting --value` |
+| tickets | `create --user [--reason]`, `close --id`, `add --id --user`, `remove --id --user` |
+| utility | `serverinfo`, `userinfo --user`, `ping` |
+| integrations | `add --type --channel [--target]`, `remove --id` |
+
+### Examples
+
+```bash
+# DB commands (offline-safe)
+apollo automod status --guild 123456789
+apollo utility tags list
+apollo admin system info
+
+# Socket commands (bot must be running)
+apollo moderation ban --user 987654321 --reason "spam"
+apollo tickets list
+apollo utility ping
+apollo admin plugin disable --id automod
+```
+
+### Container Notes
+
+The CLI is built into the Docker image via a symlink at `/usr/local/bin/apollo` pointing to `bin/apollo.js`. Socket commands communicate with the bot process inside the same container over `/tmp/apollo.sock`.
+
 ## Technologies Used
 
 - **discord.js** — Discord API wrapper
