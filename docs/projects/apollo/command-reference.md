@@ -10,21 +10,21 @@ Complete reference for all A.P.O.L.L.O commands.
 
 ### /navi
 
-The primary Nova companion command for A.P.O.L.L.O. Use this to interact with Nova's core functionality.
+Manually trigger a Na'vi word post from the Nova subsystem.
 
 **Usage:**
 ```
-/navi [subcommand] [options]
+/navi
 ```
 
-**Required Permission:** None (basic user)
+**Required Permission:** Bot Owner only
 
-**Description:** Activates Nova, A.P.O.L.L.O's AI companion, for various tasks including information retrieval, analysis, and automation assistance.
+**Description:** Posts a random Na'vi word with English translation from the Reykunyu API to the configured NAVI_CHANNEL_ID. Part of the Nova subsystem which also automatically posts a daily Na'vi word at 12:00 PM ET.
 
 **Example:**
 ```
-/navi help
-/navi search query:AI models
+/navi
+→ Posts embed with Na'vi word and English translation
 ```
 
 ---

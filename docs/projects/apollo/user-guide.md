@@ -29,9 +29,11 @@ A.P.O.L.L.O commands are organized into logical groups to help you find what you
 
 ### /navi
 
-Summons the Nova navigation interface for voice channel management.
+Manually trigger a Na'vi word post from the Nova subsystem.
 
-- **Description** — Displays an interactive interface to manage voice channel settings and user navigation
+- **Description** — Posts a random Na'vi word with English translation from the Reykunyu API
+- **Required Permission** — Bot Owner only
+- **Frequency** — Can be used anytime; also runs automatically daily at 12:00 PM ET
 
 ## Utility Commands
 
