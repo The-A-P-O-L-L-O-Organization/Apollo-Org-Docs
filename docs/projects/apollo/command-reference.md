@@ -1115,4 +1115,4 @@ Update a plugin to the latest version.
 - [User Guide](./user-guide.md) - End-user documentation
 - [Developer Guide](./developer-guide.md) - Development and custom commands
 - [Introduction](./intro.md) - Apollo Bot overview
-- [Configuration Guide](../configuration.md) - Server setup and configuration
+- [Troubleshooting](./troubleshooting.md) - Common issues and solutions
