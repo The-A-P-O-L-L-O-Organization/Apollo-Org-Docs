@@ -20,6 +20,7 @@ The A.P.O.L.L.O. Organization is a shared space for projects, ideas, and open-so
 Explore our current projects:
 
 - **[A.P.O.L.L.O Discord Bot](./projects/apollo/intro)**: A feature-rich Discord bot with plugin architecture, utility and moderation commands, multi-instance scaling, and integrated subsystems including Nova.
+- **[Starlight NRP Bot](./projects/starlight-nrp-bot/intro)**: A space nation roleplay Discord bot with automatic tick-based economy, player trading, galactic market, diplomacy, and comprehensive GM tools.
 - **[Nova Subsystem](./projects/nova)**: Na'vi word posting subsystem — originally a standalone bot, now integrated as a plugin inside Apollo v2.
 
 ## Getting Started
